@@ -12,7 +12,10 @@
 		B5A97A541F1C2FB400B12841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A521F1C2FB400B12841 /* Main.storyboard */; };
 		B5A97A561F1C2FB400B12841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A551F1C2FB400B12841 /* Assets.xcassets */; };
 		B5A97A591F1C2FB400B12841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A571F1C2FB400B12841 /* LaunchScreen.storyboard */; };
-		B5A97A641F1C2FB400B12841 /* ShinShikakuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A97A631F1C2FB400B12841 /* ShinShikakuTests.swift */; };
+		B5CC22FD1F1C532C00FC4A06 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5CC22FE1F1C532C00FC4A06 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5CC22FB1F1C52F700FC4A06 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5CC22FF1F1C53CB00FC4A06 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */; };
+		B5CC23001F1C53CB00FC4A06 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CC22FB1F1C52F700FC4A06 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B5CC22FC1F1C531300FC4A06 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5CC22FD1F1C532C00FC4A06 /* Nimble.framework in CopyFiles */,
+				B5CC22FE1F1C532C00FC4A06 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B5A97A4B1F1C2FB400B12841 /* ShinShikaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinShikaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A97A4E1F1C2FB400B12841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +51,9 @@
 		B5A97A581F1C2FB400B12841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5A97A5A1F1C2FB400B12841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A97A5F1F1C2FB400B12841 /* ShinShikakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinShikakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A97A631F1C2FB400B12841 /* ShinShikakuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinShikakuTests.swift; sourceTree = "<group>"; };
 		B5A97A651F1C2FB400B12841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		B5CC22FB1F1C52F700FC4A06 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CC22FF1F1C53CB00FC4A06 /* Nimble.framework in Frameworks */,
+				B5CC23001F1C53CB00FC4A06 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +82,7 @@
 				B5A97A4D1F1C2FB400B12841 /* ShinShikaku */,
 				B5A97A621F1C2FB400B12841 /* ShinShikakuTests */,
 				B5A97A4C1F1C2FB400B12841 /* Products */,
+				B5CC22F41F1C529B00FC4A06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,10 +111,18 @@
 		B5A97A621F1C2FB400B12841 /* ShinShikakuTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5A97A631F1C2FB400B12841 /* ShinShikakuTests.swift */,
 				B5A97A651F1C2FB400B12841 /* Info.plist */,
 			);
 			path = ShinShikakuTests;
+			sourceTree = "<group>";
+		};
+		B5CC22F41F1C529B00FC4A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */,
+				B5CC22FB1F1C52F700FC4A06 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +152,7 @@
 				B5A97A5B1F1C2FB400B12841 /* Sources */,
 				B5A97A5C1F1C2FB400B12841 /* Frameworks */,
 				B5A97A5D1F1C2FB400B12841 /* Resources */,
+				B5CC22FC1F1C531300FC4A06 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -206,7 +236,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A97A641F1C2FB400B12841 /* ShinShikakuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +406,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8LHVT7DW44;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ShinShikakuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicethings.ShinShikakuTests;
@@ -393,6 +426,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8LHVT7DW44;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ShinShikakuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicethings.ShinShikakuTests;
@@ -422,6 +459,7 @@
 				B5A97A6A1F1C2FB400B12841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5A97A6B1F1C2FB400B12841 /* Build configuration list for PBXNativeTarget "ShinShikakuTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +468,7 @@
 				B5A97A6D1F1C2FB400B12841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
