@@ -92,7 +92,7 @@
 		B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 		B5CC22FB1F1C52F700FC4A06 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenSpec.swift; sourceTree = "<group>"; };
-		B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartMenuViewController.swift; path = "ShinShikaku/New Group/View Controllers/StartMenuViewController.swift"; sourceTree = SOURCE_ROOT; };
+		B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartMenuViewController.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,10 +187,10 @@
 		B5A97A421F1C2FB400B12841 = {
 			isa = PBXGroup;
 			children = (
+				B5CC22F41F1C529B00FC4A06 /* Frameworks */,
+				B5A97A4C1F1C2FB400B12841 /* Products */,
 				B5A97A4D1F1C2FB400B12841 /* ShinShikaku */,
 				B5A97A621F1C2FB400B12841 /* ShinShikakuTests */,
-				B5A97A4C1F1C2FB400B12841 /* Products */,
-				B5CC22F41F1C529B00FC4A06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,14 +208,14 @@
 			children = (
 				B521615C1F2123830032005D /* Common */,
 				B52161591F2122560032005D /* Extensions */,
-				B5C4B2F81F20F500008C1ECF /* Resources */,
 				B52E2DF91F20370500BE173C /* Protocols */,
+				B5C4B2F81F20F500008C1ECF /* Resources */,
 				B5CC230F1F1DA04100FC4A06 /* Screens */,
 				B5A97A4E1F1C2FB400B12841 /* AppDelegate.swift */,
-				B5A97A501F1C2FB400B12841 /* ViewController.swift */,
 				B5A97A551F1C2FB400B12841 /* Assets.xcassets */,
-				B5A97A571F1C2FB400B12841 /* LaunchScreen.storyboard */,
 				B5A97A5A1F1C2FB400B12841 /* Info.plist */,
+				B5A97A571F1C2FB400B12841 /* LaunchScreen.storyboard */,
+				B5A97A501F1C2FB400B12841 /* ViewController.swift */,
 			);
 			path = ShinShikaku;
 			sourceTree = "<group>";
@@ -234,8 +234,8 @@
 		B5C4B2F01F20EBD8008C1ECF /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */,
 				B5C4B2F11F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift */,
+				B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 				B5CC23121F1DA50500FC4A06 /* Views */,
 			);
 			name = Screens;
-			path = "New Group";
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		B5CC23121F1DA50500FC4A06 /* Views */ = {
@@ -438,6 +438,7 @@
 				B5A97A581F1C2FB400B12841 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
