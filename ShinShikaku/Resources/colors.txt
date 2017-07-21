@@ -1,0 +1,18 @@
+BackgroundDark : 2a0832
+TileOutlineDark: 673f31
+
+BackgroundLight : fff7dd
+TileOutlineLight: fce7ab
+
+TileTouchYellow: fec92e
+TileTouchBlue: 1eb7da
+TileTouchRed: fc4a37
+TileTouchHotPink: e1189d
+
+TileTouchMustard: f3b040
+TileTouchTeal: fd775a
+TileTouchSalmon: fd775a
+TileTouchLightPink: fc5e8a
+TileTouchGreen: becf6e
+TileTouchPurple: c074fc
+TileTouchMauve: d58ea3

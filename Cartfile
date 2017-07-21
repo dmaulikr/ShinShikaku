@@ -1,3 +1,4 @@
 github "quick/quick" ~> 1.1.0
 github "quick/nimble" ~> 7.0.1
+github "volodg/RxSwift" "swift4"
 
