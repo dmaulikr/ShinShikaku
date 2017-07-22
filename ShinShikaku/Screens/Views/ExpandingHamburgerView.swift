@@ -10,17 +10,17 @@ import UIKit
 
 final class ExpandingHamburgerView: UIView {
 
-    private let profileButton = { return ExpandingHamburgerView.menuButton(text: Strings.ExpandableHamburgerView.profileButtonTitle,
+    let profileButton = { return ExpandingHamburgerView.menuButton(text: Strings.ExpandableHamburgerView.profileButtonTitle,
                                    target: self,
                                    action: Selector.profileButtonTapped,
                                    for: .touchUpInside) }()
 
-    private let settingsButton = { return ExpandingHamburgerView.menuButton(text: Strings.ExpandableHamburgerView.profileButtonTitle,
+    let settingsButton = { return ExpandingHamburgerView.menuButton(text: Strings.ExpandableHamburgerView.profileButtonTitle,
                                     target: self,
                                     action: Selector.settingsButtonTapped,
                                     for: .touchUpInside) }()
 
-    private let creditsButton = { return ExpandingHamburgerView.menuButton(text: Strings.ExpandableHamburgerView.profileButtonTitle,
+    let creditsButton = { return ExpandingHamburgerView.menuButton(text: Strings.ExpandableHamburgerView.profileButtonTitle,
                                    target: self,
                                    action: Selector.creditsButtonTapped,
                                    for: .touchUpInside) }()

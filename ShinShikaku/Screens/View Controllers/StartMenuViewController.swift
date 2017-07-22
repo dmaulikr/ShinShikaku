@@ -12,13 +12,14 @@ import RxSwift
 
 final class StartMenuViewController: UIViewController {
 
-    private let disposeBag = DisposeBag()
-    private let expandingHamburgerView: ExpandingHamburgerView = ExpandingHamburgerView()
-    private let resumeButton: UIButton = {
+    let expandingHamburgerView: ExpandingHamburgerView = ExpandingHamburgerView()
+    let resumeButton: UIButton = {
         let resume = UIButton()
         resume.translatesAutoresizingMaskIntoConstraints = false
+        resume.addTarget(self, action: #selector(resumeButtonTapped), for: .touchUpInside)
         return resume
     }()
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +28,22 @@ final class StartMenuViewController: UIViewController {
         configureBindings()
     }
 
-    @objc func profileButtonTapped() {}
-    @objc func settingsButtonTapped() {}
-    @objc func creditsButtonTapped() {}
+    @objc func profileButtonTapped() {
+        let profileViewController = ProfileViewController()
+        present(profileViewController, animated: true)
+    }
+    @objc func settingsButtonTapped() {
+        let settingsViewController = SettingsViewController()
+        present(settingsViewController, animated: true)
+    }
+    @objc func creditsButtonTapped() {
+        let creditsViewController = CreditsViewController()
+        present(creditsViewController, animated: true)
+    }
+    @objc func resumeButtonTapped() {
+        let levelViewController = LevelViewController()
+        present(levelViewController, animated: true)
+    }
     @objc func toggleButtonTapped() {}
 
 }

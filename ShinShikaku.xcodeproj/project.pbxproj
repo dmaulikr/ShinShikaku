@@ -18,6 +18,10 @@
 		B52161701F22374C0032005D /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B521616D1F2237090032005D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B52161751F223CAA0032005D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B52E2DFB1F20373B00BE173C /* ViewConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E2DFA1F20373B00BE173C /* ViewConfigurable.swift */; };
+		B53052071F22B04C00E7B26C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53052061F22B04C00E7B26C /* SettingsViewController.swift */; };
+		B53052091F22B11E00E7B26C /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53052081F22B11E00E7B26C /* CreditsViewController.swift */; };
+		B530520B1F22B12800E7B26C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530520A1F22B12800E7B26C /* ProfileViewController.swift */; };
+		B530520D1F22B29F00E7B26C /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530520C1F22B29F00E7B26C /* LevelViewController.swift */; };
 		B5738FC31F22588D00E79E04 /* SpecHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5738FC21F22588D00E79E04 /* SpecHelper.swift */; };
 		B5738FC61F2279D400E79E04 /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5738FC51F2279D400E79E04 /* TimeService.swift */; };
 		B5A97A4F1F1C2FB400B12841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A97A4E1F1C2FB400B12841 /* AppDelegate.swift */; };
@@ -77,6 +81,10 @@
 		B521616B1F21920E0032005D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B521616D1F2237090032005D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		B52E2DFA1F20373B00BE173C /* ViewConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurable.swift; sourceTree = "<group>"; };
+		B53052061F22B04C00E7B26C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B53052081F22B11E00E7B26C /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		B530520A1F22B12800E7B26C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B530520C1F22B29F00E7B26C /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		B5738FC21F22588D00E79E04 /* SpecHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecHelper.swift; sourceTree = "<group>"; };
 		B5738FC51F2279D400E79E04 /* TimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
 		B5A97A4B1F1C2FB400B12841 /* ShinShikaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinShikaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +100,7 @@
 		B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 		B5CC22FB1F1C52F700FC4A06 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenSpec.swift; sourceTree = "<group>"; };
-		B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartMenuViewController.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
+		B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +280,6 @@
 				B5CC23131F1DA50D00FC4A06 /* View Controllers */,
 				B5CC23121F1DA50500FC4A06 /* Views */,
 			);
-			name = Screens;
 			path = Screens;
 			sourceTree = "<group>";
 		};
@@ -288,6 +295,10 @@
 			isa = PBXGroup;
 			children = (
 				B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */,
+				B53052061F22B04C00E7B26C /* SettingsViewController.swift */,
+				B53052081F22B11E00E7B26C /* CreditsViewController.swift */,
+				B530520A1F22B12800E7B26C /* ProfileViewController.swift */,
+				B530520C1F22B29F00E7B26C /* LevelViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -396,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CC23111F1DA07200FC4A06 /* StartMenuViewController.swift in Sources */,
+				B53052091F22B11E00E7B26C /* CreditsViewController.swift in Sources */,
 				B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */,
 				B50AE65B1F1FC7D500455E06 /* ExpandingHamburgerView.swift in Sources */,
 				B52E2DFB1F20373B00BE173C /* ViewConfigurable.swift in Sources */,
@@ -405,6 +417,9 @@
 				B5A97A4F1F1C2FB400B12841 /* AppDelegate.swift in Sources */,
 				B52161611F2126E50032005D /* Selector+Actions.swift in Sources */,
 				B521615F1F21239C0032005D /* NavPushButton.swift in Sources */,
+				B530520D1F22B29F00E7B26C /* LevelViewController.swift in Sources */,
+				B53052071F22B04C00E7B26C /* SettingsViewController.swift in Sources */,
+				B530520B1F22B12800E7B26C /* ProfileViewController.swift in Sources */,
 				B52161671F218D400032005D /* Session.swift in Sources */,
 				B521616A1F2190030032005D /* UIColor+Constant.swift in Sources */,
 			);
