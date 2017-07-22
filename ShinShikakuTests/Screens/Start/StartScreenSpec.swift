@@ -86,7 +86,7 @@ class StartScreenSpec: QuickSpec {
                         let button = self.startMenuVC.expandingHamburgerView.settingsButton
                         button.sendActions(for: .touchUpInside)
 
-                        expect(self.startMenuVC.presentedViewController).to(beAnInstanceOf(SettingsViewController))
+                        expect(self.startMenuVC.presentedViewController).to(beAnInstanceOf(SettingsViewController.self))
                     }
 
                     it("profile button must present ProfileViewController") {
@@ -100,14 +100,14 @@ class StartScreenSpec: QuickSpec {
                         let button = self.startMenuVC.expandingHamburgerView.creditsButton
                         button.sendActions(for: .touchUpInside)
 
-                        expect(self.startMenuVC.presentedViewController).to(beAnInstanceOf(CreditsViewController))
+                        expect(self.startMenuVC.presentedViewController).to(beAnInstanceOf(CreditsViewController.self))
                     }
 
                     it("resume button must present LevelViewController") {
                         let button = self.startMenuVC.resumeButton
                         button.sendActions(for: .touchUpInside)
 
-                        expect(self.startMenuVC.presentedViewController).to(beAnInstanceOf(LevelViewController))
+                        expect(self.startMenuVC.presentedViewController).to(beAnInstanceOf(LevelViewController.self))
                     }
 
                 }
