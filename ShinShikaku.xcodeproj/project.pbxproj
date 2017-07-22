@@ -294,11 +294,11 @@
 		B5CC23131F1DA50D00FC4A06 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */,
-				B53052061F22B04C00E7B26C /* SettingsViewController.swift */,
 				B53052081F22B11E00E7B26C /* CreditsViewController.swift */,
-				B530520A1F22B12800E7B26C /* ProfileViewController.swift */,
 				B530520C1F22B29F00E7B26C /* LevelViewController.swift */,
+				B530520A1F22B12800E7B26C /* ProfileViewController.swift */,
+				B53052061F22B04C00E7B26C /* SettingsViewController.swift */,
+				B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
