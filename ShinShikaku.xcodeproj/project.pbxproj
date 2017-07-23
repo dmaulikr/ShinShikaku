@@ -193,8 +193,8 @@
 		B52E2DF91F20370500BE173C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				B52E2DFA1F20373B00BE173C /* ViewConfigurable.swift */,
 				B5D229F91F24CFB200638675 /* MVVM.swift */,
+				B52E2DFA1F20373B00BE173C /* ViewConfigurable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -210,9 +210,9 @@
 		B59513811F23D054006AC9C2 /* Level */ = {
 			isa = PBXGroup;
 			children = (
+				B5D22A041F25659600638675 /* GridViewSpec.swift */,
 				B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */,
 				B5D22A001F25629000638675 /* LevelViewSpec.swift */,
-				B5D22A041F25659600638675 /* GridViewSpec.swift */,
 			);
 			path = Level;
 			sourceTree = "<group>";
@@ -303,8 +303,8 @@
 		B5CC230F1F1DA04100FC4A06 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				B5D229FB1F24D09600638675 /* View Model */,
 				B5CC23131F1DA50D00FC4A06 /* View Controllers */,
+				B5D229FB1F24D09600638675 /* View Model */,
 				B5CC23121F1DA50500FC4A06 /* Views */,
 			);
 			path = Screens;
@@ -314,8 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				B50AE65A1F1FC7D500455E06 /* ExpandingHamburgerView.swift */,
-				B5D229FE1F24D0C200638675 /* LevelView.swift */,
 				B5D22A021F25650400638675 /* GridView.swift */,
+				B5D229FE1F24D0C200638675 /* LevelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
