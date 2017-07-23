@@ -15,6 +15,7 @@ class ExpandingHamburgerViewSpec: QuickSpec {
 
     override func spec() {
         describe("ExpandingHamburgerView") {
+
             let view = ExpandingHamburgerView(frame: .zero)
 
             it("must implement ViewConfigurable") {

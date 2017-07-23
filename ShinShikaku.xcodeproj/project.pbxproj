@@ -36,6 +36,12 @@
 		B5CC23001F1C53CB00FC4A06 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CC22FB1F1C52F700FC4A06 /* Quick.framework */; };
 		B5CC230E1F1D9F2500FC4A06 /* StartScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */; };
 		B5CC23111F1DA07200FC4A06 /* StartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */; };
+		B5D229FA1F24CFB200638675 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D229F91F24CFB200638675 /* MVVM.swift */; };
+		B5D229FD1F24D0A100638675 /* LevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D229FC1F24D0A100638675 /* LevelViewModel.swift */; };
+		B5D229FF1F24D0C200638675 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D229FE1F24D0C200638675 /* LevelView.swift */; };
+		B5D22A011F25629000638675 /* LevelViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D22A001F25629000638675 /* LevelViewSpec.swift */; };
+		B5D22A031F25650400638675 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D22A021F25650400638675 /* GridView.swift */; };
+		B5D22A051F25659600638675 /* GridViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D22A041F25659600638675 /* GridViewSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +109,12 @@
 		B5CC22FB1F1C52F700FC4A06 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenSpec.swift; sourceTree = "<group>"; };
 		B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
+		B5D229F91F24CFB200638675 /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
+		B5D229FC1F24D0A100638675 /* LevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModel.swift; sourceTree = "<group>"; };
+		B5D229FE1F24D0C200638675 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		B5D22A001F25629000638675 /* LevelViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewSpec.swift; sourceTree = "<group>"; };
+		B5D22A021F25650400638675 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		B5D22A041F25659600638675 /* GridViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				B52E2DFA1F20373B00BE173C /* ViewConfigurable.swift */,
+				B5D229F91F24CFB200638675 /* MVVM.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -198,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */,
+				B5D22A001F25629000638675 /* LevelViewSpec.swift */,
+				B5D22A041F25659600638675 /* GridViewSpec.swift */,
 			);
 			path = Level;
 			sourceTree = "<group>";
@@ -288,6 +303,7 @@
 		B5CC230F1F1DA04100FC4A06 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B5D229FB1F24D09600638675 /* View Model */,
 				B5CC23131F1DA50D00FC4A06 /* View Controllers */,
 				B5CC23121F1DA50500FC4A06 /* Views */,
 			);
@@ -298,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				B50AE65A1F1FC7D500455E06 /* ExpandingHamburgerView.swift */,
+				B5D229FE1F24D0C200638675 /* LevelView.swift */,
+				B5D22A021F25650400638675 /* GridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -312,6 +330,14 @@
 				B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B5D229FB1F24D09600638675 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5D229FC1F24D0A100638675 /* LevelViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,11 +446,14 @@
 				B5CC23111F1DA07200FC4A06 /* StartMenuViewController.swift in Sources */,
 				B53052091F22B11E00E7B26C /* CreditsViewController.swift in Sources */,
 				B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */,
+				B5D229FD1F24D0A100638675 /* LevelViewModel.swift in Sources */,
 				B50AE65B1F1FC7D500455E06 /* ExpandingHamburgerView.swift in Sources */,
 				B52E2DFB1F20373B00BE173C /* ViewConfigurable.swift in Sources */,
 				B5738FC61F2279D400E79E04 /* TimeService.swift in Sources */,
 				B521616C1F21920E0032005D /* Theme.swift in Sources */,
+				B5D229FA1F24CFB200638675 /* MVVM.swift in Sources */,
 				B5C4B2FA1F20F512008C1ECF /* Strings.swift in Sources */,
+				B5D229FF1F24D0C200638675 /* LevelView.swift in Sources */,
 				B5A97A4F1F1C2FB400B12841 /* AppDelegate.swift in Sources */,
 				B52161611F2126E50032005D /* Selector+Actions.swift in Sources */,
 				B521615F1F21239C0032005D /* NavPushButton.swift in Sources */,
@@ -432,6 +461,7 @@
 				B53052071F22B04C00E7B26C /* SettingsViewController.swift in Sources */,
 				B530520B1F22B12800E7B26C /* ProfileViewController.swift in Sources */,
 				B52161671F218D400032005D /* Session.swift in Sources */,
+				B5D22A031F25650400638675 /* GridView.swift in Sources */,
 				B521616A1F2190030032005D /* UIColor+Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,8 +470,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D22A011F25629000638675 /* LevelViewSpec.swift in Sources */,
 				B52161641F218CD70032005D /* SessionSpec.swift in Sources */,
 				B5C4B2F21F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift in Sources */,
+				B5D22A051F25659600638675 /* GridViewSpec.swift in Sources */,
 				B59513831F23D068006AC9C2 /* LevelScreenSpec.swift in Sources */,
 				B5738FC31F22588D00E79E04 /* SpecHelper.swift in Sources */,
 				B5CC230E1F1D9F2500FC4A06 /* StartScreenSpec.swift in Sources */,

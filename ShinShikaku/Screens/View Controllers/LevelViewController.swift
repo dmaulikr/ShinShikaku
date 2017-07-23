@@ -9,19 +9,27 @@
 import UIKit
 import RxSwift
 
-final class LevelViewController: UIViewController {
+final class LevelViewController: UIViewController, MVVM {
+
+    // MARK: MVVM
+    var viewModel: Any!
+    var primaryChildView: UIView! = LevelView()
 
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureViews()
         configureBindings()
     }
 
 }
 
 extension LevelViewController: ViewConfigurable {
-    func configureViews() {}
+    func configureViews() {
+        primaryChildView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(primaryChildView)
+    }
 
     func configureConstraints() {}
 
