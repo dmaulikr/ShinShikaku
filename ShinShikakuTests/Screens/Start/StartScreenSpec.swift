@@ -28,18 +28,7 @@ class StartScreenSpec: QuickSpec {
 
         }
 
-        describe("the view") {
-            beforeEach {
-                // Method #2: Triggers .viewDidLoad(), .viewWillAppear(), and .viewDidAppear() events.
-                self.startMenuVC.beginAppearanceTransition(true, animated: false)
-                self.startMenuVC.endAppearanceTransition()
-            }
-        }
-
-
-        describe("Lifecycle") {
-
-            describe(".viewDidLoad") {
+        describe("UI") {
 
                 beforeEach {
                     let window = UIWindow(frame: UIScreen.main.bounds)
@@ -113,8 +102,6 @@ class StartScreenSpec: QuickSpec {
                 }
 
             }
-
-        }
 
     }
 }

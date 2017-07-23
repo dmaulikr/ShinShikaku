@@ -24,6 +24,7 @@
 		B530520D1F22B29F00E7B26C /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530520C1F22B29F00E7B26C /* LevelViewController.swift */; };
 		B5738FC31F22588D00E79E04 /* SpecHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5738FC21F22588D00E79E04 /* SpecHelper.swift */; };
 		B5738FC61F2279D400E79E04 /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5738FC51F2279D400E79E04 /* TimeService.swift */; };
+		B59513831F23D068006AC9C2 /* LevelScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */; };
 		B5A97A4F1F1C2FB400B12841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A97A4E1F1C2FB400B12841 /* AppDelegate.swift */; };
 		B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A97A501F1C2FB400B12841 /* ViewController.swift */; };
 		B5A97A561F1C2FB400B12841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A551F1C2FB400B12841 /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 		B530520C1F22B29F00E7B26C /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		B5738FC21F22588D00E79E04 /* SpecHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecHelper.swift; sourceTree = "<group>"; };
 		B5738FC51F2279D400E79E04 /* TimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
+		B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScreenSpec.swift; sourceTree = "<group>"; };
 		B5A97A4B1F1C2FB400B12841 /* ShinShikaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinShikaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A97A4E1F1C2FB400B12841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A97A501F1C2FB400B12841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		B59513811F23D054006AC9C2 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
 		B5A97A421F1C2FB400B12841 = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +279,7 @@
 		B5CC230C1F1D9EF800FC4A06 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B59513811F23D054006AC9C2 /* Level */,
 				B5C4B2F01F20EBD8008C1ECF /* Start */,
 			);
 			path = Screens;
@@ -431,6 +442,7 @@
 			files = (
 				B52161641F218CD70032005D /* SessionSpec.swift in Sources */,
 				B5C4B2F21F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift in Sources */,
+				B59513831F23D068006AC9C2 /* LevelScreenSpec.swift in Sources */,
 				B5738FC31F22588D00E79E04 /* SpecHelper.swift in Sources */,
 				B5CC230E1F1D9F2500FC4A06 /* StartScreenSpec.swift in Sources */,
 			);

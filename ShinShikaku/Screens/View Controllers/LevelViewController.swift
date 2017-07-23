@@ -7,29 +7,28 @@
 //
 
 import UIKit
+import RxSwift
 
-class LevelViewController: UIViewController {
+final class LevelViewController: UIViewController {
+
+    let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureBindings()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension LevelViewController: ViewConfigurable {
+    func configureViews() {}
+
+    func configureConstraints() {}
+
+    func configureBindings() {
+        Observable
+            .from(optional: Session.sharedInstance.theme.backgroundColor)
+            .subscribe(onNext: { self.view.backgroundColor = $0 })
+            .disposed(by: disposeBag)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
