@@ -18,6 +18,12 @@ class LevelScreenSpec: QuickSpec {
 
         beforeEach {
             self.levelVC = LevelViewController()
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            window.rootViewController = self.levelVC
+            window.makeKeyAndVisible()
+            let _ =  self.levelVC.view
+            self.levelVC.beginAppearanceTransition(true, animated: false)
+            self.levelVC.endAppearanceTransition()
         }
 
         describe("Protocol implementations") {
@@ -33,21 +39,9 @@ class LevelScreenSpec: QuickSpec {
         }
 
         describe("UI") {
-            beforeEach {
-                let window = UIWindow(frame: UIScreen.main.bounds)
-                window.rootViewController = self.levelVC
-                window.makeKeyAndVisible()
-                let _ =  self.levelVC.view
-                self.levelVC.beginAppearanceTransition(true, animated: false)
-                self.levelVC.endAppearanceTransition()
-            }
 
             afterEach {
                 TimeService.sharedInstance = TimeService()
-            }
-
-            it("LevelViewController's subviews must contain exactly 1 LevelView") {
-                expect(self.levelVC.view.subviews.filter({ $0 is LevelView }).count).to(equal(1))
             }
 
             it("background color must be .dark if current local time is between 19:00 and 07:00") {
@@ -66,11 +60,14 @@ class LevelScreenSpec: QuickSpec {
         }
 
         describe("View") {
-            it("has a LevelView") {}
+            it("has a LevelView") {
+                expect(self.levelVC.view.subviews.filter({ $0 is LevelView }).count).to(equal(1))
+            }
         }
 
         describe("View Model") {
             it("has a LevelViewModel") {
+                expect(self.levelVC.viewModel is LevelViewModel).to(beTrue())
             }
         }
 
