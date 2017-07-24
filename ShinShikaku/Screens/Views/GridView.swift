@@ -27,7 +27,7 @@ final class GridView: UIStackView {
             addArrangedSubview(stackView)
             for _ in stride(from: 0, to: rowCount, by: 1) {
                 if let col = subviews[colIdx] as? UIStackView {
-                    col.addArrangedSubview(UIView())
+                    col.addArrangedSubview(TileView())
                 }
             }
         }

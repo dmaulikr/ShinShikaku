@@ -42,6 +42,7 @@
 		B5D22A011F25629000638675 /* LevelViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D22A001F25629000638675 /* LevelViewSpec.swift */; };
 		B5D22A031F25650400638675 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D22A021F25650400638675 /* GridView.swift */; };
 		B5D22A051F25659600638675 /* GridViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D22A041F25659600638675 /* GridViewSpec.swift */; };
+		B5D22A071F26325500638675 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D22A061F26325500638675 /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		B5D22A001F25629000638675 /* LevelViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewSpec.swift; sourceTree = "<group>"; };
 		B5D22A021F25650400638675 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		B5D22A041F25659600638675 /* GridViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewSpec.swift; sourceTree = "<group>"; };
+		B5D22A061F26325500638675 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +317,7 @@
 			children = (
 				B50AE65A1F1FC7D500455E06 /* ExpandingHamburgerView.swift */,
 				B5D22A021F25650400638675 /* GridView.swift */,
+				B5D22A061F26325500638675 /* TileView.swift */,
 				B5D229FE1F24D0C200638675 /* LevelView.swift */,
 			);
 			path = Views;
@@ -444,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CC23111F1DA07200FC4A06 /* StartMenuViewController.swift in Sources */,
+				B5D22A071F26325500638675 /* TileView.swift in Sources */,
 				B53052091F22B11E00E7B26C /* CreditsViewController.swift in Sources */,
 				B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */,
 				B5D229FD1F24D0A100638675 /* LevelViewModel.swift in Sources */,

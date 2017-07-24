@@ -44,6 +44,12 @@ class GridViewSpec: QuickSpec {
                 }
             }
 
+            it("Each column must have subviews which are of type TileView") {
+                for colIdx in stride(from: 0, to: gridView.subviews.count, by: 1) {
+                    let col = gridView.subviews[colIdx]
+                    expect(col.subviews.filter({ !($0 is TileView) }).count).to(equal(0))
+                }
+            }
         }
 
     }
