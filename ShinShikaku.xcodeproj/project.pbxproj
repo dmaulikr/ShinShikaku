@@ -32,6 +32,13 @@
 		B5BD58671F2637ED00BC2D65 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD58621F2637CF00BC2D65 /* Quick.framework */; };
 		B5BD58681F2637FD00BC2D65 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5BD58631F2637CF00BC2D65 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5BD58691F26380800BC2D65 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD58631F2637CF00BC2D65 /* RxSwift.framework */; };
+		B5BD586B1F2666E100BC2D65 /* LevelViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD586A1F2666E100BC2D65 /* LevelViewModelSpec.swift */; };
+		B5BD586E1F266EBD00BC2D65 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD586D1F266EBD00BC2D65 /* Level.swift */; };
+		B5BD58731F26AB9300BC2D65 /* LevelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */; };
+		B5BD58751F26ACE400BC2D65 /* WinConditionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58741F26ACE400BC2D65 /* WinConditionSpec.swift */; };
+		B5BD58771F26AD3500BC2D65 /* WinCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58761F26AD3500BC2D65 /* WinCondition.swift */; };
+		B5BD58791F26B2A800BC2D65 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58781F26B2A800BC2D65 /* Position.swift */; };
+		B5BD587B1F26B2B500BC2D65 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD587A1F26B2B500BC2D65 /* Dimensions.swift */; };
 		B5C4B2F21F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B2F11F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift */; };
 		B5C4B2FA1F20F512008C1ECF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B2F91F20F512008C1ECF /* Strings.swift */; };
 		B5CC230E1F1D9F2500FC4A06 /* StartScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */; };
@@ -106,6 +113,13 @@
 		B5BD58611F2637CF00BC2D65 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
 		B5BD58621F2637CF00BC2D65 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
 		B5BD58631F2637CF00BC2D65 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Frameworks/RxSwift.framework; sourceTree = "<group>"; };
+		B5BD586A1F2666E100BC2D65 /* LevelViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModelSpec.swift; sourceTree = "<group>"; };
+		B5BD586D1F266EBD00BC2D65 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSpec.swift; sourceTree = "<group>"; };
+		B5BD58741F26ACE400BC2D65 /* WinConditionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinConditionSpec.swift; sourceTree = "<group>"; };
+		B5BD58761F26AD3500BC2D65 /* WinCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinCondition.swift; sourceTree = "<group>"; };
+		B5BD58781F26B2A800BC2D65 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		B5BD587A1F26B2B500BC2D65 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 		B5C4B2F11F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingHamburgerViewSpec.swift; sourceTree = "<group>"; };
 		B5C4B2F91F20F512008C1ECF /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenSpec.swift; sourceTree = "<group>"; };
@@ -214,6 +228,7 @@
 			children = (
 				B5D22A041F25659600638675 /* GridViewSpec.swift */,
 				B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */,
+				B5BD586A1F2666E100BC2D65 /* LevelViewModelSpec.swift */,
 				B5D22A001F25629000638675 /* LevelViewSpec.swift */,
 			);
 			path = Level;
@@ -241,6 +256,7 @@
 		B5A97A4D1F1C2FB400B12841 /* ShinShikaku */ = {
 			isa = PBXGroup;
 			children = (
+				B5BD586C1F266EAA00BC2D65 /* Model */,
 				B521615C1F2123830032005D /* Common */,
 				B52161591F2122560032005D /* Extensions */,
 				B52E2DF91F20370500BE173C /* Protocols */,
@@ -258,12 +274,33 @@
 		B5A97A621F1C2FB400B12841 /* ShinShikakuTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5BD586F1F26AB5800BC2D65 /* Model */,
 				B52161681F218D490032005D /* Common */,
 				B5CC230C1F1D9EF800FC4A06 /* Screens */,
 				B5A97A651F1C2FB400B12841 /* Info.plist */,
 				B5738FC21F22588D00E79E04 /* SpecHelper.swift */,
 			);
 			path = ShinShikakuTests;
+			sourceTree = "<group>";
+		};
+		B5BD586C1F266EAA00BC2D65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD586D1F266EBD00BC2D65 /* Level.swift */,
+				B5BD58761F26AD3500BC2D65 /* WinCondition.swift */,
+				B5BD58781F26B2A800BC2D65 /* Position.swift */,
+				B5BD587A1F26B2B500BC2D65 /* Dimensions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5BD586F1F26AB5800BC2D65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */,
+				B5BD58741F26ACE400BC2D65 /* WinConditionSpec.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B5C4B2F01F20EBD8008C1ECF /* Start */ = {
@@ -447,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CC23111F1DA07200FC4A06 /* StartMenuViewController.swift in Sources */,
+				B5BD58771F26AD3500BC2D65 /* WinCondition.swift in Sources */,
 				B5D22A071F26325500638675 /* TileView.swift in Sources */,
 				B53052091F22B11E00E7B26C /* CreditsViewController.swift in Sources */,
 				B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */,
@@ -458,12 +496,15 @@
 				B5D229FA1F24CFB200638675 /* MVVM.swift in Sources */,
 				B5C4B2FA1F20F512008C1ECF /* Strings.swift in Sources */,
 				B5D229FF1F24D0C200638675 /* LevelView.swift in Sources */,
+				B5BD586E1F266EBD00BC2D65 /* Level.swift in Sources */,
+				B5BD58791F26B2A800BC2D65 /* Position.swift in Sources */,
 				B5A97A4F1F1C2FB400B12841 /* AppDelegate.swift in Sources */,
 				B52161611F2126E50032005D /* Selector+Actions.swift in Sources */,
 				B521615F1F21239C0032005D /* NavPushButton.swift in Sources */,
 				B530520D1F22B29F00E7B26C /* LevelViewController.swift in Sources */,
 				B53052071F22B04C00E7B26C /* SettingsViewController.swift in Sources */,
 				B530520B1F22B12800E7B26C /* ProfileViewController.swift in Sources */,
+				B5BD587B1F26B2B500BC2D65 /* Dimensions.swift in Sources */,
 				B52161671F218D400032005D /* Session.swift in Sources */,
 				B5D22A031F25650400638675 /* GridView.swift in Sources */,
 				B521616A1F2190030032005D /* UIColor+Constant.swift in Sources */,
@@ -475,7 +516,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D22A011F25629000638675 /* LevelViewSpec.swift in Sources */,
+				B5BD58751F26ACE400BC2D65 /* WinConditionSpec.swift in Sources */,
 				B52161641F218CD70032005D /* SessionSpec.swift in Sources */,
+				B5BD58731F26AB9300BC2D65 /* LevelSpec.swift in Sources */,
+				B5BD586B1F2666E100BC2D65 /* LevelViewModelSpec.swift in Sources */,
 				B5C4B2F21F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift in Sources */,
 				B5D22A051F25659600638675 /* GridViewSpec.swift in Sources */,
 				B59513831F23D068006AC9C2 /* LevelScreenSpec.swift in Sources */,

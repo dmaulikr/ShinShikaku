@@ -12,7 +12,7 @@ import RxSwift
 final class LevelViewController: UIViewController, MVVM {
 
     // MARK: MVVM
-    var viewModel: Any! = LevelViewModel()
+    var viewModel: Any! = LevelViewModel(level: Level(winConditions: []))
     var primaryChildView: UIView! = LevelView()
 
     let disposeBag = DisposeBag()
