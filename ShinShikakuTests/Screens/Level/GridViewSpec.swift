@@ -32,7 +32,18 @@ class GridViewSpec: QuickSpec {
                     expect(col.subviews.count).to(equal(3))
                 }
             }
-            
+
+            it("Must have distribution set to .fillEqually") {
+                expect(gridView.distribution == .fillEqually).to(beTrue())
+            }
+
+            it("Each column must also have distribution set to .fillEqually") {
+                for colIdx in stride(from: 0, to: gridView.subviews.count, by: 1) {
+                    let col = gridView.subviews[colIdx] as! UIStackView
+                    expect(col.distribution == .fillEqually).to(beTrue())
+                }
+            }
+
         }
 
     }

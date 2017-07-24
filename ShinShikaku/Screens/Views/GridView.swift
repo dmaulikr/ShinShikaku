@@ -16,8 +16,15 @@ final class GridView: UIStackView {
 
     convenience init(rowCount: Int, columnCount: Int) {
         self.init(frame: .zero)
+
+        // Configuration
+        distribution = .fillEqually
+
+        // Set up individual tiles
         for colIdx in stride(from: 0, to: columnCount, by: 1) {
-            addArrangedSubview(UIStackView())
+            let stackView = UIStackView()
+            stackView.distribution = .fillEqually
+            addArrangedSubview(stackView)
             for _ in stride(from: 0, to: rowCount, by: 1) {
                 if let col = subviews[colIdx] as? UIStackView {
                     col.addArrangedSubview(UIView())
