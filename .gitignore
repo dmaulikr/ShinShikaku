@@ -2,3 +2,6 @@
 *.xcuserstate
 
 *.xcbkptlist
+
+Frameworks/*
+Carthage/*

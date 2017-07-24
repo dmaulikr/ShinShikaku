@@ -14,9 +14,6 @@
 		B52161671F218D400032005D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52161661F218D400032005D /* Session.swift */; };
 		B521616A1F2190030032005D /* UIColor+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52161691F2190030032005D /* UIColor+Constant.swift */; };
 		B521616C1F21920E0032005D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521616B1F21920E0032005D /* Theme.swift */; };
-		B521616E1F22371C0032005D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B521616D1F2237090032005D /* RxSwift.framework */; };
-		B52161701F22374C0032005D /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B521616D1F2237090032005D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B52161751F223CAA0032005D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B52E2DFB1F20373B00BE173C /* ViewConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E2DFA1F20373B00BE173C /* ViewConfigurable.swift */; };
 		B53052071F22B04C00E7B26C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53052061F22B04C00E7B26C /* SettingsViewController.swift */; };
 		B53052091F22B11E00E7B26C /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53052081F22B11E00E7B26C /* CreditsViewController.swift */; };
@@ -29,11 +26,14 @@
 		B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A97A501F1C2FB400B12841 /* ViewController.swift */; };
 		B5A97A561F1C2FB400B12841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A551F1C2FB400B12841 /* Assets.xcassets */; };
 		B5A97A591F1C2FB400B12841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A571F1C2FB400B12841 /* LaunchScreen.storyboard */; };
+		B5BD58641F2637DA00BC2D65 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5BD58611F2637CF00BC2D65 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5BD58651F2637DA00BC2D65 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5BD58621F2637CF00BC2D65 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5BD58661F2637ED00BC2D65 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD58611F2637CF00BC2D65 /* Nimble.framework */; };
+		B5BD58671F2637ED00BC2D65 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD58621F2637CF00BC2D65 /* Quick.framework */; };
+		B5BD58681F2637FD00BC2D65 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5BD58631F2637CF00BC2D65 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5BD58691F26380800BC2D65 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD58631F2637CF00BC2D65 /* RxSwift.framework */; };
 		B5C4B2F21F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B2F11F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift */; };
 		B5C4B2FA1F20F512008C1ECF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B2F91F20F512008C1ECF /* Strings.swift */; };
-		B5CC22FE1F1C532C00FC4A06 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5CC22FB1F1C52F700FC4A06 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5CC22FF1F1C53CB00FC4A06 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */; };
-		B5CC23001F1C53CB00FC4A06 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CC22FB1F1C52F700FC4A06 /* Quick.framework */; };
 		B5CC230E1F1D9F2500FC4A06 /* StartScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */; };
 		B5CC23111F1DA07200FC4A06 /* StartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */; };
 		B5D229FA1F24CFB200638675 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D229F91F24CFB200638675 /* MVVM.swift */; };
@@ -62,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B52161701F22374C0032005D /* RxSwift.framework in CopyFiles */,
+				B5BD58681F2637FD00BC2D65 /* RxSwift.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +72,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B52161751F223CAA0032005D /* Nimble.framework in CopyFiles */,
-				B5CC22FE1F1C532C00FC4A06 /* Quick.framework in CopyFiles */,
+				B5BD58641F2637DA00BC2D65 /* Nimble.framework in CopyFiles */,
+				B5BD58651F2637DA00BC2D65 /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,6 @@
 		B52161661F218D400032005D /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B52161691F2190030032005D /* UIColor+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Constant.swift"; sourceTree = "<group>"; };
 		B521616B1F21920E0032005D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		B521616D1F2237090032005D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		B52E2DFA1F20373B00BE173C /* ViewConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurable.swift; sourceTree = "<group>"; };
 		B53052061F22B04C00E7B26C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B53052081F22B11E00E7B26C /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
@@ -104,10 +103,11 @@
 		B5A97A5A1F1C2FB400B12841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A97A5F1F1C2FB400B12841 /* ShinShikakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinShikakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A97A651F1C2FB400B12841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BD58611F2637CF00BC2D65 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
+		B5BD58621F2637CF00BC2D65 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
+		B5BD58631F2637CF00BC2D65 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Frameworks/RxSwift.framework; sourceTree = "<group>"; };
 		B5C4B2F11F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingHamburgerViewSpec.swift; sourceTree = "<group>"; };
 		B5C4B2F91F20F512008C1ECF /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
-		B5CC22FB1F1C52F700FC4A06 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenSpec.swift; sourceTree = "<group>"; };
 		B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
 		B5D229F91F24CFB200638675 /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B521616E1F22371C0032005D /* RxSwift.framework in Frameworks */,
+				B5BD58691F26380800BC2D65 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CC22FF1F1C53CB00FC4A06 /* Nimble.framework in Frameworks */,
-				B5CC23001F1C53CB00FC4A06 /* Quick.framework in Frameworks */,
+				B5BD58661F2637ED00BC2D65 /* Nimble.framework in Frameworks */,
+				B5BD58671F2637ED00BC2D65 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +286,9 @@
 		B5CC22F41F1C529B00FC4A06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B521616D1F2237090032005D /* RxSwift.framework */,
-				B5CC22FA1F1C52F700FC4A06 /* Nimble.framework */,
-				B5CC22FB1F1C52F700FC4A06 /* Quick.framework */,
+				B5BD58611F2637CF00BC2D65 /* Nimble.framework */,
+				B5BD58621F2637CF00BC2D65 /* Quick.framework */,
+				B5BD58631F2637CF00BC2D65 /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -622,6 +622,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ShinShikaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -640,6 +641,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = ShinShikaku/Info.plist;
@@ -661,6 +663,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ShinShikakuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -683,6 +686,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ShinShikakuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
