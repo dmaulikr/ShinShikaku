@@ -11,8 +11,26 @@ import RxSwift
 
 final class LevelViewController: UIViewController, MVVM {
 
+    // TODO: Remove Dummy Models Here
+    private var grid: Grid = {
+        let tiles = [Tile(), Tile()]
+        let grid = Grid(tiles: tiles)
+        return grid
+    }()
+
+    private var winConditions: [WinCondition] = {
+        return [WinCondition(position: Position.zero, dimensions: Dimensions(width: 2, height: 1))]
+    }()
+
+    lazy private var level: Level = {
+        return try! Level(winConditions: self.winConditions, grid: self.grid)
+    }()
+
     // MARK: MVVM
-    var viewModel: Any! = LevelViewModel(level: Level(winConditions: []))
+    lazy var viewModel: Any! = {
+        return LevelViewModel(level: self.level)
+    }()
+
     var primaryChildView: UIView! = LevelView()
 
     let disposeBag = DisposeBag()

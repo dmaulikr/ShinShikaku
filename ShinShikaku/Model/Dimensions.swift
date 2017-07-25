@@ -11,6 +11,8 @@ import Foundation
 struct Dimensions {
     var width: Int
     var height: Int
+    var area: Int { return width * height }
+    static var zero = Dimensions(width: 0, height: 0)
 }
 
 extension Dimensions: Equatable {}

@@ -39,6 +39,10 @@
 		B5BD58771F26AD3500BC2D65 /* WinCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58761F26AD3500BC2D65 /* WinCondition.swift */; };
 		B5BD58791F26B2A800BC2D65 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58781F26B2A800BC2D65 /* Position.swift */; };
 		B5BD587B1F26B2B500BC2D65 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD587A1F26B2B500BC2D65 /* Dimensions.swift */; };
+		B5BD587D1F26D16A00BC2D65 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD587C1F26D16A00BC2D65 /* Grid.swift */; };
+		B5BD587F1F26D93300BC2D65 /* GridSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD587E1F26D93300BC2D65 /* GridSpec.swift */; };
+		B5BD58831F26DBBA00BC2D65 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58821F26DBBA00BC2D65 /* Tile.swift */; };
+		B5BD58861F2780DF00BC2D65 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58851F2780DF00BC2D65 /* Errors.swift */; };
 		B5C4B2F21F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B2F11F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift */; };
 		B5C4B2FA1F20F512008C1ECF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B2F91F20F512008C1ECF /* Strings.swift */; };
 		B5CC230E1F1D9F2500FC4A06 /* StartScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */; };
@@ -120,6 +124,10 @@
 		B5BD58761F26AD3500BC2D65 /* WinCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinCondition.swift; sourceTree = "<group>"; };
 		B5BD58781F26B2A800BC2D65 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		B5BD587A1F26B2B500BC2D65 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
+		B5BD587C1F26D16A00BC2D65 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B5BD587E1F26D93300BC2D65 /* GridSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSpec.swift; sourceTree = "<group>"; };
+		B5BD58821F26DBBA00BC2D65 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		B5BD58851F2780DF00BC2D65 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		B5C4B2F11F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingHamburgerViewSpec.swift; sourceTree = "<group>"; };
 		B5C4B2F91F20F512008C1ECF /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenSpec.swift; sourceTree = "<group>"; };
@@ -256,6 +264,7 @@
 		B5A97A4D1F1C2FB400B12841 /* ShinShikaku */ = {
 			isa = PBXGroup;
 			children = (
+				B5BD58841F2780BD00BC2D65 /* Enums */,
 				B5BD586C1F266EAA00BC2D65 /* Model */,
 				B521615C1F2123830032005D /* Common */,
 				B52161591F2122560032005D /* Extensions */,
@@ -287,6 +296,8 @@
 			isa = PBXGroup;
 			children = (
 				B5BD586D1F266EBD00BC2D65 /* Level.swift */,
+				B5BD587C1F26D16A00BC2D65 /* Grid.swift */,
+				B5BD58821F26DBBA00BC2D65 /* Tile.swift */,
 				B5BD58761F26AD3500BC2D65 /* WinCondition.swift */,
 				B5BD58781F26B2A800BC2D65 /* Position.swift */,
 				B5BD587A1F26B2B500BC2D65 /* Dimensions.swift */,
@@ -298,9 +309,18 @@
 			isa = PBXGroup;
 			children = (
 				B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */,
+				B5BD587E1F26D93300BC2D65 /* GridSpec.swift */,
 				B5BD58741F26ACE400BC2D65 /* WinConditionSpec.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B5BD58841F2780BD00BC2D65 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD58851F2780DF00BC2D65 /* Errors.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		B5C4B2F01F20EBD8008C1ECF /* Start */ = {
@@ -490,6 +510,7 @@
 				B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */,
 				B5D229FD1F24D0A100638675 /* LevelViewModel.swift in Sources */,
 				B50AE65B1F1FC7D500455E06 /* ExpandingHamburgerView.swift in Sources */,
+				B5BD587D1F26D16A00BC2D65 /* Grid.swift in Sources */,
 				B52E2DFB1F20373B00BE173C /* ViewConfigurable.swift in Sources */,
 				B5738FC61F2279D400E79E04 /* TimeService.swift in Sources */,
 				B521616C1F21920E0032005D /* Theme.swift in Sources */,
@@ -497,10 +518,12 @@
 				B5C4B2FA1F20F512008C1ECF /* Strings.swift in Sources */,
 				B5D229FF1F24D0C200638675 /* LevelView.swift in Sources */,
 				B5BD586E1F266EBD00BC2D65 /* Level.swift in Sources */,
+				B5BD58831F26DBBA00BC2D65 /* Tile.swift in Sources */,
 				B5BD58791F26B2A800BC2D65 /* Position.swift in Sources */,
 				B5A97A4F1F1C2FB400B12841 /* AppDelegate.swift in Sources */,
 				B52161611F2126E50032005D /* Selector+Actions.swift in Sources */,
 				B521615F1F21239C0032005D /* NavPushButton.swift in Sources */,
+				B5BD58861F2780DF00BC2D65 /* Errors.swift in Sources */,
 				B530520D1F22B29F00E7B26C /* LevelViewController.swift in Sources */,
 				B53052071F22B04C00E7B26C /* SettingsViewController.swift in Sources */,
 				B530520B1F22B12800E7B26C /* ProfileViewController.swift in Sources */,
@@ -520,6 +543,7 @@
 				B52161641F218CD70032005D /* SessionSpec.swift in Sources */,
 				B5BD58731F26AB9300BC2D65 /* LevelSpec.swift in Sources */,
 				B5BD586B1F2666E100BC2D65 /* LevelViewModelSpec.swift in Sources */,
+				B5BD587F1F26D93300BC2D65 /* GridSpec.swift in Sources */,
 				B5C4B2F21F20EBF3008C1ECF /* ExpandingHamburgerViewSpec.swift in Sources */,
 				B5D22A051F25659600638675 /* GridViewSpec.swift in Sources */,
 				B59513831F23D068006AC9C2 /* LevelScreenSpec.swift in Sources */,

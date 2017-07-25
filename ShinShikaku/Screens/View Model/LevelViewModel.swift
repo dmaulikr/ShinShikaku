@@ -11,5 +11,5 @@ import Foundation
 struct LevelViewModel {
 
     var level: Level
-
+    
 }

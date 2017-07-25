@@ -11,8 +11,13 @@ import Foundation
 struct Level {
 
     let winConditions: [WinCondition]
+    let grid: Grid
 
-    init(winConditions: [WinCondition]) {
+    init(winConditions: [WinCondition], grid: Grid) throws {
+        if grid.area != winConditions.reduce(0, { $0 + $1.dimensions.area }) {
+            throw ShikakuError.Grid.winConditionGridAreaMismatch
+        }
+        self.grid = grid
         self.winConditions = winConditions
     }
 

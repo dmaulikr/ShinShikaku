@@ -15,9 +15,16 @@ class LevelViewModelSpec: QuickSpec {
 
     override func spec() {
 
-        let vm = LevelViewModel(level: Level(winConditions: []))
+        var vm: LevelViewModel!
 
         describe("Models") {
+
+            beforeEach {
+                let tiles = [Tile(), Tile()]
+                let winConditions = [WinCondition(position: Position.zero, dimensions: Dimensions(width: 2, height: 1))]
+                let level = try! Level(winConditions: winConditions, grid: Grid(tiles: tiles))
+                vm = LevelViewModel(level: level)
+            }
 
             it("Has a Level") {
                 expect(vm.level).toNot(beNil())
