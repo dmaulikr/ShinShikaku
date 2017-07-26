@@ -20,9 +20,8 @@ class LevelViewModelSpec: QuickSpec {
         describe("Models") {
 
             beforeEach {
-                let tiles = [Tile(), Tile()]
-                let winConditions = [WinCondition(position: Position.zero, dimensions: Dimensions(width: 2, height: 1))]
-                let level = try! Level(winConditions: winConditions, grid: Grid(tiles: tiles))
+                let winConditions = [WinCondition(position: Position.zero, dimensions: Dimensions(width: 5, height: 5))]
+                let level = try! Level(winConditions: winConditions, grid: GridGenerator.generateBoard(with: LevelViewModel.generateTileState(for:), width: 5, height: 5))
                 vm = LevelViewModel(level: level)
             }
 

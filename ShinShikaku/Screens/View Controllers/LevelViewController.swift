@@ -13,13 +13,14 @@ final class LevelViewController: UIViewController, MVVM {
 
     // TODO: Remove Dummy Models Here
     private var grid: Grid = {
-        let tiles = [Tile(), Tile()]
-        let grid = Grid(tiles: tiles)
+        let tiles = [Tile(position: .zero, state: .traversable),
+                     Tile(position: .zero, state: .traversable)]
+        let grid = GridGenerator.generateBoard(with: LevelViewModel.generateTileState(for:), width: 5, height: 5)
         return grid
     }()
 
     private var winConditions: [WinCondition] = {
-        return [WinCondition(position: Position.zero, dimensions: Dimensions(width: 2, height: 1))]
+        return [WinCondition(position: Position.zero, dimensions: Dimensions(width: 5, height: 5))]
     }()
 
     lazy private var level: Level = {

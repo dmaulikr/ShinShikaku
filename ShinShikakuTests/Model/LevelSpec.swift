@@ -18,9 +18,9 @@ class LevelSpec: QuickSpec {
     override func spec() {
 
         beforeEach {
-            let tiles = [Tile(), Tile()]
-            let winConditions = [WinCondition(position: Position.zero, dimensions: Dimensions(width: 2, height: 1))]
-            self.level = try! Level(winConditions: winConditions, grid: Grid(tiles: tiles))
+            let winConditions = [WinCondition(position: Position.zero, dimensions: Dimensions(width: 5, height: 5))]
+            self.level = try! Level(winConditions: winConditions,
+                                    grid: GridGenerator.generateBoard(with: LevelViewModel.generateTileState(for:), width: 5, height: 5))
         }
 
         describe("Properties") {

@@ -8,4 +8,24 @@
 
 import Foundation
 
-struct Tile {}
+struct Tile {
+
+    let position: Position
+    let state: TileState
+
+}
+
+enum TileState {
+
+    case traversable, blocked
+
+    var isTraversable: Bool {
+        switch self {
+        case .traversable:
+            return true
+        default:
+            return false
+        }
+    }
+
+}
