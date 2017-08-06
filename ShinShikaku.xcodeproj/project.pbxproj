@@ -21,17 +21,15 @@
 		B530520D1F22B29F00E7B26C /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530520C1F22B29F00E7B26C /* LevelViewController.swift */; };
 		B5738FC31F22588D00E79E04 /* SpecHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5738FC21F22588D00E79E04 /* SpecHelper.swift */; };
 		B5738FC61F2279D400E79E04 /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5738FC51F2279D400E79E04 /* TimeService.swift */; };
+		B5782EB81F37C69500BC2AFA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5782EB71F37C68600BC2AFA /* RxSwift.framework */; };
+		B5782EB91F37C69500BC2AFA /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5782EB71F37C68600BC2AFA /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5782EC31F37C96200BC2AFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5782EC11F37C93200BC2AFA /* Nimble.framework */; };
+		B5782EC41F37C96200BC2AFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5782EC21F37C93300BC2AFA /* Quick.framework */; };
 		B59513831F23D068006AC9C2 /* LevelScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */; };
 		B5A97A4F1F1C2FB400B12841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A97A4E1F1C2FB400B12841 /* AppDelegate.swift */; };
 		B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A97A501F1C2FB400B12841 /* ViewController.swift */; };
 		B5A97A561F1C2FB400B12841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A551F1C2FB400B12841 /* Assets.xcassets */; };
 		B5A97A591F1C2FB400B12841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A571F1C2FB400B12841 /* LaunchScreen.storyboard */; };
-		B5BD58641F2637DA00BC2D65 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5BD58611F2637CF00BC2D65 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5BD58651F2637DA00BC2D65 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5BD58621F2637CF00BC2D65 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5BD58661F2637ED00BC2D65 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD58611F2637CF00BC2D65 /* Nimble.framework */; };
-		B5BD58671F2637ED00BC2D65 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD58621F2637CF00BC2D65 /* Quick.framework */; };
-		B5BD58681F2637FD00BC2D65 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5BD58631F2637CF00BC2D65 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5BD58691F26380800BC2D65 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD58631F2637CF00BC2D65 /* RxSwift.framework */; };
 		B5BD586B1F2666E100BC2D65 /* LevelViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD586A1F2666E100BC2D65 /* LevelViewModelSpec.swift */; };
 		B5BD586E1F266EBD00BC2D65 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD586D1F266EBD00BC2D65 /* Level.swift */; };
 		B5BD58731F26AB9300BC2D65 /* LevelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */; };
@@ -67,25 +65,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B521616F1F2237440032005D /* CopyFiles */ = {
+		B5782EBA1F37C69500BC2AFA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B5BD58681F2637FD00BC2D65 /* RxSwift.framework in CopyFiles */,
+				B5782EB91F37C69500BC2AFA /* RxSwift.framework in Embed Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5CC22FC1F1C531300FC4A06 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B5BD58641F2637DA00BC2D65 /* Nimble.framework in CopyFiles */,
-				B5BD58651F2637DA00BC2D65 /* Quick.framework in CopyFiles */,
-			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -105,6 +93,9 @@
 		B530520C1F22B29F00E7B26C /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		B5738FC21F22588D00E79E04 /* SpecHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecHelper.swift; sourceTree = "<group>"; };
 		B5738FC51F2279D400E79E04 /* TimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
+		B5782EB71F37C68600BC2AFA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		B5782EC11F37C93200BC2AFA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		B5782EC21F37C93300BC2AFA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScreenSpec.swift; sourceTree = "<group>"; };
 		B5A97A4B1F1C2FB400B12841 /* ShinShikaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinShikaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A97A4E1F1C2FB400B12841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,9 +105,6 @@
 		B5A97A5A1F1C2FB400B12841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A97A5F1F1C2FB400B12841 /* ShinShikakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinShikakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A97A651F1C2FB400B12841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5BD58611F2637CF00BC2D65 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
-		B5BD58621F2637CF00BC2D65 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
-		B5BD58631F2637CF00BC2D65 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Frameworks/RxSwift.framework; sourceTree = "<group>"; };
 		B5BD586A1F2666E100BC2D65 /* LevelViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModelSpec.swift; sourceTree = "<group>"; };
 		B5BD586D1F266EBD00BC2D65 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSpec.swift; sourceTree = "<group>"; };
@@ -146,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BD58691F26380800BC2D65 /* RxSwift.framework in Frameworks */,
+				B5782EB81F37C69500BC2AFA /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BD58661F2637ED00BC2D65 /* Nimble.framework in Frameworks */,
-				B5BD58671F2637ED00BC2D65 /* Quick.framework in Frameworks */,
+				B5782EC31F37C96200BC2AFA /* Nimble.framework in Frameworks */,
+				B5782EC41F37C96200BC2AFA /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +219,16 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		B5782EBB1F37C78C00BC2AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5782EC11F37C93200BC2AFA /* Nimble.framework */,
+				B5782EC21F37C93300BC2AFA /* Quick.framework */,
+				B5782EB71F37C68600BC2AFA /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B59513811F23D054006AC9C2 /* Level */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,7 +243,7 @@
 		B5A97A421F1C2FB400B12841 = {
 			isa = PBXGroup;
 			children = (
-				B5CC22F41F1C529B00FC4A06 /* Frameworks */,
+				B5782EBB1F37C78C00BC2AFA /* Frameworks */,
 				B5A97A4C1F1C2FB400B12841 /* Products */,
 				B5A97A4D1F1C2FB400B12841 /* ShinShikaku */,
 				B5A97A621F1C2FB400B12841 /* ShinShikakuTests */,
@@ -264,10 +262,10 @@
 		B5A97A4D1F1C2FB400B12841 /* ShinShikaku */ = {
 			isa = PBXGroup;
 			children = (
-				B5BD58841F2780BD00BC2D65 /* Enums */,
-				B5BD586C1F266EAA00BC2D65 /* Model */,
 				B521615C1F2123830032005D /* Common */,
+				B5BD58841F2780BD00BC2D65 /* Enums */,
 				B52161591F2122560032005D /* Extensions */,
+				B5BD586C1F266EAA00BC2D65 /* Model */,
 				B52E2DF91F20370500BE173C /* Protocols */,
 				B5C4B2F81F20F500008C1ECF /* Resources */,
 				B5CC230F1F1DA04100FC4A06 /* Screens */,
@@ -283,8 +281,8 @@
 		B5A97A621F1C2FB400B12841 /* ShinShikakuTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5BD586F1F26AB5800BC2D65 /* Model */,
 				B52161681F218D490032005D /* Common */,
+				B5BD586F1F26AB5800BC2D65 /* Model */,
 				B5CC230C1F1D9EF800FC4A06 /* Screens */,
 				B5A97A651F1C2FB400B12841 /* Info.plist */,
 				B5738FC21F22588D00E79E04 /* SpecHelper.swift */,
@@ -295,12 +293,12 @@
 		B5BD586C1F266EAA00BC2D65 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B5BD586D1F266EBD00BC2D65 /* Level.swift */,
+				B5BD587A1F26B2B500BC2D65 /* Dimensions.swift */,
 				B5BD587C1F26D16A00BC2D65 /* Grid.swift */,
+				B5BD586D1F266EBD00BC2D65 /* Level.swift */,
+				B5BD58781F26B2A800BC2D65 /* Position.swift */,
 				B5BD58821F26DBBA00BC2D65 /* Tile.swift */,
 				B5BD58761F26AD3500BC2D65 /* WinCondition.swift */,
-				B5BD58781F26B2A800BC2D65 /* Position.swift */,
-				B5BD587A1F26B2B500BC2D65 /* Dimensions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,8 +306,8 @@
 		B5BD586F1F26AB5800BC2D65 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */,
 				B5BD587E1F26D93300BC2D65 /* GridSpec.swift */,
+				B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */,
 				B5BD58741F26ACE400BC2D65 /* WinConditionSpec.swift */,
 			);
 			path = Model;
@@ -340,16 +338,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B5CC22F41F1C529B00FC4A06 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B5BD58611F2637CF00BC2D65 /* Nimble.framework */,
-				B5BD58621F2637CF00BC2D65 /* Quick.framework */,
-				B5BD58631F2637CF00BC2D65 /* RxSwift.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B5CC230C1F1D9EF800FC4A06 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,8 +362,8 @@
 			children = (
 				B50AE65A1F1FC7D500455E06 /* ExpandingHamburgerView.swift */,
 				B5D22A021F25650400638675 /* GridView.swift */,
-				B5D22A061F26325500638675 /* TileView.swift */,
 				B5D229FE1F24D0C200638675 /* LevelView.swift */,
+				B5D22A061F26325500638675 /* TileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -410,7 +398,8 @@
 				B5A97A471F1C2FB400B12841 /* Sources */,
 				B5A97A481F1C2FB400B12841 /* Frameworks */,
 				B5A97A491F1C2FB400B12841 /* Resources */,
-				B521616F1F2237440032005D /* CopyFiles */,
+				B5782EB61F37C65000BC2AFA /* Carthage */,
+				B5782EBA1F37C69500BC2AFA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,7 +417,7 @@
 				B5A97A5B1F1C2FB400B12841 /* Sources */,
 				B5A97A5C1F1C2FB400B12841 /* Frameworks */,
 				B5A97A5D1F1C2FB400B12841 /* Resources */,
-				B5CC22FC1F1C531300FC4A06 /* CopyFiles */,
+				B5782EBC1F37C86400BC2AFA /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -497,6 +486,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5782EB61F37C65000BC2AFA /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		B5782EBC1F37C86400BC2AFA /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5A97A471F1C2FB400B12841 /* Sources */ = {
@@ -691,6 +717,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ShinShikaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -710,6 +737,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = ShinShikaku/Info.plist;
@@ -732,6 +760,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ShinShikakuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -755,6 +784,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ShinShikakuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

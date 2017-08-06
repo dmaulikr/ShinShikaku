@@ -1,6 +1,6 @@
 //
 //  SwiftSupport.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Volodymyr  Gorbenko on 3/6/17.
 //  Copyright © 2017 Krunoslav Zaher. All rights reserved.

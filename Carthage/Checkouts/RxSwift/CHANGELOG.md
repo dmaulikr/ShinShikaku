@@ -5,12 +5,57 @@ All notable changes to this project will be documented in this file.
 
 ## Master
 
+## [4.0.0-alpha.0](https://github.com/ReactiveX/RxSwift/releases/tag/4.0.0-alpha.0)
+* Swift 4.0 compatibility
+* Changes delegate proxy to use plugin architecture. 
+
+#### Anomalies
+* Fixes public interface leakage of `NSKeyValueObservingOptions`. #1164
+
+## [3.6.1](https://github.com/ReactiveX/RxSwift/releases/tag/3.6.1)
+
 #### Anomalies
 
+* Fixes compilation issue with Xcode 9b3. #1341
+* Fixes issues with `andThen` operator. #1347
+* Improves locking behavior of `merge` and `switch` operators. #1344
+
+## [3.6.0](https://github.com/ReactiveX/RxSwift/releases/tag/3.6.0)
+
+* Adds `timeout` operator to `PrimitiveSequence` (`Single`, `Maybe`, `Observable`)
+* Adds `delay` operator to `SharedSequence`.
+* Adds `andThen` operator to `Completeable`.
+* Adds `concat` operator to `Completeable`.
+* Adds `RxPickerViewDataSourceType`
+* Adds `UIPickerView` extensions:
+    * `modelSelected`
+    * `itemTitles`
+    * `itemAttributedTitles`
+    * `items`
+* Adds `UITableView` extensions:
+    * `modelDeleted`
+* Adds `UICollectionView` extensions:
+    * `itemHighlighted`
+    * `itemUnhighlighted`
+    * `willDisplayCell`
+    * `didEndDisplayingCell`
+    * `willDisplaySupplementaryView`
+    * `didEndDisplayingSupplementaryView`
+* Adds `UIScrollView` extensions:
+    * `willBeginDecelerating`
+    * `willBeginDragging`
+    * `willBeginZooming`
+    * `didEndZooming`
+
+#### Anomalies
+
+* Fixes deadlock anomaly in `shareReplayWhileLatest`. #1323
+* Removes duplicated events swallowing in `NSControl` on macOS.
 
 ## [3.5.0](https://github.com/ReactiveX/RxSwift/releases/tag/3.5.0)
 
 * Adds `from` operator on "SharedSequence"
+* Adds `concat` operator on "Completable"
 * Adds `merge` operator on "Completable"
 * Adds `using` operator on "PrimitiveSequence"
 * Adds `concatMap` operator.

@@ -434,7 +434,7 @@ extension SharedSequenceConvertibleType {
     - parameter resultSelector: Function to invoke for each element from the self combined with the latest element from the second source, if any.
     - returns: An observable sequence containing the result of combining each element of the self  with the latest element from the second source, if any, using the specified result selector function.
     */
-    public func withLatestFrom<SecondO: SharedSequenceConvertibleType, ResultType>(_ second: SecondO, resultSelector: @escaping (E, SecondO.E) -> ResultType) -> SharedSequence<SharingStrategy, ResultType> where SecondO.SharingStrategy == SecondO.SharingStrategy {
+    public func withLatestFrom<SecondO: SharedSequenceConvertibleType, ResultType>(_ second: SecondO, resultSelector: @escaping (E, SecondO.E) -> ResultType) -> SharedSequence<SharingStrategy, ResultType> where SecondO.SharingStrategy == SharingStrategy {
         let source = self.asObservable()
             .withLatestFrom(second.asSharedSequence(), resultSelector: resultSelector)
 
@@ -489,6 +489,27 @@ extension SharedSequenceConvertibleType {
         -> SharedSequence<SharingStrategy, E> {
         let source = self.asObservable()
                 .startWith(element)
+
+        return SharedSequence(source)
+    }
+}
+
+// MARK: delay
+extension SharedSequenceConvertibleType {
+
+    /**
+     Returns an observable sequence by the source observable sequence shifted forward in time by a specified delay. Error events from the source observable sequence are not delayed.
+
+     - seealso: [delay operator on reactivex.io](http://reactivex.io/documentation/operators/delay.html)
+
+     - parameter dueTime: Relative time shift of the source by.
+     - parameter scheduler: Scheduler to run the subscription delay timer on.
+     - returns: the source Observable shifted in time by the specified delay.
+     */
+    public func delay(_ dueTime: RxTimeInterval)
+        -> SharedSequence<SharingStrategy, E> {
+        let source = self.asObservable()
+            .delay(dueTime, scheduler: SharingStrategy.scheduler)
 
         return SharedSequence(source)
     }

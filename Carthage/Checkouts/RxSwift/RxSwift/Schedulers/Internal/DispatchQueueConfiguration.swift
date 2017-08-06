@@ -43,7 +43,7 @@ extension DispatchQueueConfiguration {
         let compositeDisposable = CompositeDisposable()
 
         let timer = DispatchSource.makeTimerSource(queue: queue)
-        timer.scheduleOneshot(deadline: deadline)
+        timer.scheduleOneshot(deadline: deadline, leeway: leeway)
 
         // TODO:
         // This looks horrible, and yes, it is.
