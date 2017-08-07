@@ -1,0 +1,41 @@
+env:
+  global:
+    - LC_CTYPE=en_US.UTF-8
+os: osx
+language: c
+matrix:
+  exclude:
+    # Note: Workaround travis-ci/travis-ci#4681
+    # Exclude default job which lacks our included environment variables.
+    - os: osx
+  cache:
+    - bundler
+  include:
+    - osx_image: xcode9
+      env:
+        - XCODE_SDK=iphonesimulator
+          XCODE_DESTINATION='platform=IOS Simulator,name=iPhone 7'
+
+before_install:
+  - export LANG=en_US.UTF-8
+  - source ~/.rvm/scripts/rvm && rvm install ruby-2.2.4 && rvm use 2.2.4
+  - brew install git-lfs
+  - git lfs install
+  - git lfs pull
+
+
+install:
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - gem install bundler --no-rdoc --no-ri
+  - carthage update --no-use-binaries
+
+after_script:
+  - bash <(curl -s https://codecov.io/bash)
+
+script:
+  - set -o pipefail && xcodebuild test
+    -project ShinShikaku.xcodeproj
+    -scheme ShinShikaku
+    -sdk ${XCODE_SDK}
+    -destination "${XCODE_DESTINATION}"
+    ONLY_ACTIVE_ARCH=NO | xcpretty
