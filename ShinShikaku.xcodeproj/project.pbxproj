@@ -22,7 +22,6 @@
 		B5738FC31F22588D00E79E04 /* SpecHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5738FC21F22588D00E79E04 /* SpecHelper.swift */; };
 		B5738FC61F2279D400E79E04 /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5738FC51F2279D400E79E04 /* TimeService.swift */; };
 		B5782EB81F37C69500BC2AFA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5782EB71F37C68600BC2AFA /* RxSwift.framework */; };
-		B5782EB91F37C69500BC2AFA /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5782EB71F37C68600BC2AFA /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5782EC31F37C96200BC2AFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5782EC11F37C93200BC2AFA /* Nimble.framework */; };
 		B5782EC41F37C96200BC2AFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5782EC21F37C93300BC2AFA /* Quick.framework */; };
 		B59513831F23D068006AC9C2 /* LevelScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59513821F23D068006AC9C2 /* LevelScreenSpec.swift */; };
@@ -63,20 +62,6 @@
 			remoteInfo = ShinShikaku;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B5782EBA1F37C69500BC2AFA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B5782EB91F37C69500BC2AFA /* RxSwift.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B50AE65A1F1FC7D500455E06 /* ExpandingHamburgerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingHamburgerView.swift; sourceTree = "<group>"; };
@@ -399,7 +384,6 @@
 				B5A97A481F1C2FB400B12841 /* Frameworks */,
 				B5A97A491F1C2FB400B12841 /* Resources */,
 				B5782EB61F37C65000BC2AFA /* Carthage */,
-				B5782EBA1F37C69500BC2AFA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -498,7 +482,7 @@
 			);
 			name = Carthage;
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
