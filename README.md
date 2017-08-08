@@ -28,6 +28,12 @@ this might take a little while. Once dependencies are installed you're ready to 
 ### Project Management
 Shin Shikaku organizes and prioritizes work in this [project](https://github.com/NiceThings/ShinShikaku/projects/1).  We embrace a pared-down flavor of scrum (2-week sprints, weekly standups, sprint planning/work allocation following the conclusion of each sprint), and tickets can be created by adding a `note` from the backlog, converting it to an `issue`, and assigning that issue to a collaborator.
 
+### Version Control
+* `master` reflects the latest release, which is also the current build in the app store
+* `develop` reflects the latest code going into the next release.
+
+All pull requests should be made into `develop` and assigned for review to one or more collaborators. Once a pull request has been approved by at least one collaborator, the approver or the author may merge it into `develop`.
+
 ### Continuous Integration
 Shin Shikaku uses [Travis CI](travis-ci.org/NiceThings/ShinShikaku) for continuous integration.
 
