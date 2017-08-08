@@ -5,6 +5,11 @@
 
 -------------
 
+### Requirements
+* Xcode 9 beta 5
+* Carthage 0.24.0
+
+
 ### Quick Setup
 Shin Shikaku uses [Carthage](https://github.com/Carthage/Carthage) for dependency management.  To get started, install Carthage via `Homebrew`:
 
@@ -14,7 +19,7 @@ Shin Shikaku uses [Carthage](https://github.com/Carthage/Carthage) for dependenc
 and pull down `RxSwift`, `Quick` and `Nimble`, by running:
 
 ```
-carthage update
+carthage update --platform iOS
 ```
 
 this might take a little while. Once dependencies are installed you're ready to build the app and start contributing.
