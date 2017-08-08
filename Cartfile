@@ -1,4 +1,4 @@
-github "quick/quick" ~> 1.1.0
-github "quick/nimble" ~> 7.0.1
+github "quick/quick" "a252243aaa0b8abcbf7a11d0b5f0570935063aff"
+github "quick/nimble" "0c79c4e168826c447ea500380e778c67bcce0ba4"
 github "ReactiveX/RxSwift" "swift4.0"
 
