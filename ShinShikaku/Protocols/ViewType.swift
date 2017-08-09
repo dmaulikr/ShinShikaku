@@ -1,5 +1,5 @@
 //
-//  MVVM.swift
+//  ViewType.swift
 //  ShinShikaku
 //
 //  Created by Matthew Buckley on 7/23/17.
@@ -8,9 +8,14 @@
 
 import UIKit
 
-protocol MVVM {
+protocol ViewType {
 
-    var viewModel: Any! { get set }
+    var presenter: Any! { get set }
     var primaryChildView: UIView! { get set }
+
+    associatedtype Input
+    associatedtype Output
+
+    func transform(input: Input) -> Output
 
 }

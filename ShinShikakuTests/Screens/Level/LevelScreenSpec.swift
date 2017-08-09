@@ -32,8 +32,8 @@ class LevelScreenSpec: QuickSpec {
                 expect(self.levelVC as ViewConfigurable).toNot(beNil())
             }
 
-            it("Implements mvvm") {
-                expect(self.levelVC as MVVM).toNot(beNil())
+            it("Implements LevelViewType") {
+                expect(self.levelVC as LevelViewType).toNot(beNil())
             }
 
         }

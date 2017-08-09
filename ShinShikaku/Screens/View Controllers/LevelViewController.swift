@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-final class LevelViewController: UIViewController, MVVM {
+final class LevelViewController: UIViewController, LevelViewType {
 
     // TODO: Remove Dummy Models Here
     private var grid: Grid = {
@@ -27,7 +27,7 @@ final class LevelViewController: UIViewController, MVVM {
         return try! Level(winConditions: self.winConditions, grid: self.grid)
     }()
 
-    // MARK: MVVM
+    // MARK: ViewType
     lazy var viewModel: Any! = {
         return LevelViewModel(level: self.level)
     }()

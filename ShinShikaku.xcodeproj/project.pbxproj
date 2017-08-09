@@ -29,6 +29,8 @@
 		B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A97A501F1C2FB400B12841 /* ViewController.swift */; };
 		B5A97A561F1C2FB400B12841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A551F1C2FB400B12841 /* Assets.xcassets */; };
 		B5A97A591F1C2FB400B12841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A97A571F1C2FB400B12841 /* LaunchScreen.storyboard */; };
+		B5B7E04B1F3B657400EB7826 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E04A1F3B657400EB7826 /* ViewType.swift */; };
+		B5B7E04D1F3B678200EB7826 /* LevelViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E04C1F3B678200EB7826 /* LevelViewType.swift */; };
 		B5BD586B1F2666E100BC2D65 /* LevelViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD586A1F2666E100BC2D65 /* LevelViewModelSpec.swift */; };
 		B5BD586E1F266EBD00BC2D65 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD586D1F266EBD00BC2D65 /* Level.swift */; };
 		B5BD58731F26AB9300BC2D65 /* LevelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */; };
@@ -44,7 +46,6 @@
 		B5C4B2FA1F20F512008C1ECF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B2F91F20F512008C1ECF /* Strings.swift */; };
 		B5CC230E1F1D9F2500FC4A06 /* StartScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */; };
 		B5CC23111F1DA07200FC4A06 /* StartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */; };
-		B5D229FA1F24CFB200638675 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D229F91F24CFB200638675 /* MVVM.swift */; };
 		B5D229FD1F24D0A100638675 /* LevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D229FC1F24D0A100638675 /* LevelViewModel.swift */; };
 		B5D229FF1F24D0C200638675 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D229FE1F24D0C200638675 /* LevelView.swift */; };
 		B5D22A011F25629000638675 /* LevelViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D22A001F25629000638675 /* LevelViewSpec.swift */; };
@@ -90,6 +91,8 @@
 		B5A97A5A1F1C2FB400B12841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A97A5F1F1C2FB400B12841 /* ShinShikakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinShikakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A97A651F1C2FB400B12841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B7E04A1F3B657400EB7826 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewType.swift; path = /Users/matthewbuckley/NiceThings/ShinShikaku/ShinShikaku/Protocols/ViewType.swift; sourceTree = "<absolute>"; };
+		B5B7E04C1F3B678200EB7826 /* LevelViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewType.swift; sourceTree = "<group>"; };
 		B5BD586A1F2666E100BC2D65 /* LevelViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModelSpec.swift; sourceTree = "<group>"; };
 		B5BD586D1F266EBD00BC2D65 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		B5BD58721F26AB9300BC2D65 /* LevelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSpec.swift; sourceTree = "<group>"; };
@@ -105,7 +108,6 @@
 		B5C4B2F91F20F512008C1ECF /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		B5CC230D1F1D9F2500FC4A06 /* StartScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenSpec.swift; sourceTree = "<group>"; };
 		B5CC23101F1DA07200FC4A06 /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
-		B5D229F91F24CFB200638675 /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
 		B5D229FC1F24D0A100638675 /* LevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModel.swift; sourceTree = "<group>"; };
 		B5D229FE1F24D0C200638675 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		B5D22A001F25629000638675 /* LevelViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewSpec.swift; sourceTree = "<group>"; };
@@ -190,7 +192,7 @@
 		B52E2DF91F20370500BE173C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				B5D229F91F24CFB200638675 /* MVVM.swift */,
+				B5B7E04A1F3B657400EB7826 /* ViewType.swift */,
 				B52E2DFA1F20373B00BE173C /* ViewConfigurable.swift */,
 			);
 			path = Protocols;
@@ -349,6 +351,7 @@
 				B5D22A021F25650400638675 /* GridView.swift */,
 				B5D229FE1F24D0C200638675 /* LevelView.swift */,
 				B5D22A061F26325500638675 /* TileView.swift */,
+				B5B7E04C1F3B678200EB7826 /* LevelViewType.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -518,14 +521,15 @@
 				B5D22A071F26325500638675 /* TileView.swift in Sources */,
 				B53052091F22B11E00E7B26C /* CreditsViewController.swift in Sources */,
 				B5A97A511F1C2FB400B12841 /* ViewController.swift in Sources */,
+				B5B7E04D1F3B678200EB7826 /* LevelViewType.swift in Sources */,
 				B5D229FD1F24D0A100638675 /* LevelViewModel.swift in Sources */,
 				B50AE65B1F1FC7D500455E06 /* ExpandingHamburgerView.swift in Sources */,
 				B5BD587D1F26D16A00BC2D65 /* Grid.swift in Sources */,
 				B52E2DFB1F20373B00BE173C /* ViewConfigurable.swift in Sources */,
 				B5738FC61F2279D400E79E04 /* TimeService.swift in Sources */,
 				B521616C1F21920E0032005D /* Theme.swift in Sources */,
-				B5D229FA1F24CFB200638675 /* MVVM.swift in Sources */,
 				B5C4B2FA1F20F512008C1ECF /* Strings.swift in Sources */,
+				B5B7E04B1F3B657400EB7826 /* ViewType.swift in Sources */,
 				B5D229FF1F24D0C200638675 /* LevelView.swift in Sources */,
 				B5BD586E1F266EBD00BC2D65 /* Level.swift in Sources */,
 				B5BD58831F26DBBA00BC2D65 /* Tile.swift in Sources */,
