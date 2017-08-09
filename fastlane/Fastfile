@@ -1,0 +1,54 @@
+###
+### ENV['IPA_OUTPUT_DIR'] = "Set by build environment"
+### ENV["NT_HOCKEY_API_TOKEN"] = "Set by build environment"
+### ENV["NT_UNLOCK_KEYCHAIN_PASSWORD"] = "Set by build environment"
+###
+
+ENV['IPA_OUTPUT_DIR'] ||= ENV['CIRCLE_ARTIFACTS'] || "./build"
+
+fastlane_version "1.102.0"
+default_platform :ios
+
+platform :ios do
+
+  ###
+  ### Before/after all
+  ###
+
+  before_all do
+    clean_build_dir
+    configure_slack
+  end
+
+  ###
+  ### Build Lanes
+  ###
+
+  desc "Builds and packages the Beta scheme for distribution via testflight"
+  lane :beta do
+    gym(scheme: "Beta")
+    increment_build_number
+    upload_symbols_to_crashlytics(:api_token => '9b7aec7b92e839513ff411ad0f241a5e761fa6fb')
+    pilot(
+      skip_waiting_for_build_processing: true
+    )
+    slack(message: "Upload to TestFlight Successful!\n" +
+                    "- Build: #{Actions.lane_context[Actions::SharedValues::BUILD_NUMBER]}",
+          channel: "Shin-Shikaku")i
+  end
+
+  ###
+  ### Helpers
+  ###
+
+  def clean_build_dir
+    if ENV['IPA_OUTPUT_DIR'] && ENV['IPA_OUTPUT_DIR'].length > 0
+      sh("rm -rf $IPA_OUTPUT_DIR && mkdir $IPA_OUTPUT_DIR")
+    end
+  end
+
+  def configure_slack
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+  end
+
+end
