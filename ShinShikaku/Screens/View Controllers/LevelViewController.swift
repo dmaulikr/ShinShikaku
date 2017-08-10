@@ -10,6 +10,16 @@ import UIKit
 import RxSwift
 
 final class LevelViewController: UIViewController, LevelViewType {
+    var presenter: Any!
+
+    func transform(input: LevelViewController.Input) -> LevelViewController.Output {
+        return Output()
+    }
+
+    struct Input {}
+
+    struct Output {}
+
 
     // TODO: Remove Dummy Models Here
     private var grid: Grid = {

@@ -33,7 +33,7 @@ class LevelScreenSpec: QuickSpec {
             }
 
             it("Implements LevelViewType") {
-                expect(self.levelVC as LevelViewType).toNot(beNil())
+                self.isAssocated(t: self.levelVC)
             }
 
         }
@@ -80,6 +80,10 @@ private extension LevelScreenSpec {
     func resetScreen() {
         TimeService.sharedInstance = TestableTimeService(withOffset: 12)
         levelVC = LevelViewController()
+    }
+
+    func isLevelViewType<T>(t: T) where T: LevelViewType {
+        return
     }
 
 }
